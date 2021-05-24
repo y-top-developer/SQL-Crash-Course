@@ -56,6 +56,13 @@ After all the programs are working correctly, you need to create a database.
 
 ![image-20210524195921849](images/image-20210524195921849.png)
 
-4. Enter the [script](init.sql) that initialize the table.
+4. Enter the [script](init.sql) that initialize the database.
 
 ![image-20210524200007755](images/image-20210524200007755.png)
+
+## Tasks
+
+### 1
+
+#### Get cat data
+
