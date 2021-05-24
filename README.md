@@ -62,9 +62,14 @@ After all the programs are working correctly, you need to create a database.
 
 ## Tasks
 
+After installing all the necessary things, you can start solving tasks: 
 
-
-
+- [Select](files/select.md)
+- [Join](files/join.md)
+- [Function](files/function.md)
+- [Advanced](files/advanced.md)
+- [Adding](files/adding.md)
+- [View](files/view.md)
 
 
 
