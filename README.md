@@ -239,5 +239,64 @@ JOIN Pet ON Pet.Pet_ID = Order_Info.Pet_ID
 JOIN Service ON Service.Service_ID = Order_Info.service_id
 ```
 
+#### 4. Get general list of comments available in the database
+
+```sql
+SELECT Comments FROM (
+                                SELECT Comments
+                                FROM Order_Info
+                                UNION
+                                SELECT Description
+                                FROM Owner
+                                UNION
+                                SELECT Description
+                                FROM Pet
+                              ) AS Comments
+WHERE LENGTH(Comments) > 0
+```
+
+#### 5. Get first name and last name of workers, who get mark equal 5
+
+```sql
+SELECT First_Name, Last_Name
+From Person
+WHERE Exists(
+            SELECT 1
+            FROM Order_Info
+            WHERE Mark = 5 AND Person.Person_ID = Order_Info.Employee_ID
+            )
+```
+
+### 5
+
+#### 1
+
+>  Write a statement adding a new individual to the PERSON table while preserving the sequential numbering of records (use a nested select with “max (…) + 1”). Add one new entry.
+
+```sql
+INSERT INTO Person (Person_ID, Last_Name, First_Name,
+Phone, Address) VALUES ((
+        SELECT MAX(Person_ID) + 1
+        FROM Person
+        ),
+        'Lee', 'Robert', '972-701-5939', '1782 Charla Lane, Dallas, TX 75240 ')
+```
+
+#### 2
+
+> Write a statement that adds an “(s)” to the beginning of the comment for each order that is a student. Execute this statement.
+
+```sql
+```
+
+#### 3
+
+> Create a new table in the database for storing data on documents of individuals (type and number of document). When creating a link from it to the PERSON table, specify the delete cascade property.
+> Add a couple of documents for a new individual (from the first paragraph).
+> Make sure that the cascade is working - when an individual is deleted, his documents are automatically deleted. 
+
+````sql
+````
+
 
 
