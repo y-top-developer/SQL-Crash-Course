@@ -20,12 +20,12 @@ Let's do a little preparation of the environment. [click](preparation.md)
 
 After installing all the necessary things, you can start solving tasks: 
 
-- [Select](files/select.md)
-- [Join](files/join.md)
-- [Function](files/function.md)
-- [Advanced](files/advanced.md)
-- [Adding](files/adding.md)
-- [View](files/view.md)
+- [Select](tasks/select.md)
+- [Join](tasks/join.md)
+- [Function](tasks/function.md)
+- [Advanced](tasks/advanced.md)
+- [Adding](tasks/adding.md)
+- [View](tasks/view.md)
 
 
 
