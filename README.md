@@ -1,5 +1,7 @@
 # SQL Crash Course
 
+[TOC]
+
 ## Intro
 
 Hi, here are the tasks that I was solving when I started to study SQL. Its cover the basic functionality of the  Structured Query Language. 
