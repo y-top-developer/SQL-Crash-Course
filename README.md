@@ -19,7 +19,7 @@ I did everything in PostgreSQL. Next there will be instructions for local instal
 The database will work in docker, this makes installation very easy. In order for the PostgreSQL to become available on port `5432` with credentials `root`:`root`, go to the directory with the `docker-compose.yml` file and run the following command:
 
 ``` bash
-# docker-compose up -d
+docker-compose up -d
 ```
 
   ### Database connection
